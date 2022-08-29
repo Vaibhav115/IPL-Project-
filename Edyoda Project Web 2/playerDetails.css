@@ -1,0 +1,29 @@
+body{
+    background-image: linear-gradient(rgba(212, 195, 39, 0.614) 0%, rgba(62, 72, 0, 0.932) 100%)  ;
+}
+.detailWrapper{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8%;
+    margin-left: 25%;
+    width: 51%;
+    height: 620px;
+    padding: 10px;
+    border: 4px solid brown;
+    background-color: coral;
+}
+.detailPlayer{
+    margin: 20px 20px;
+    margin-left: 23%;
+}
+
+.detailPlayer span{
+
+    font-weight: 500;
+    font-size: 22px;
+}
+#playerImg img{
+    width: 760px;
+    margin-left: 1%;
+}
+

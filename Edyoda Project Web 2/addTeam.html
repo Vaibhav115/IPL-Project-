@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./addTeam.css">
+    <script src="https://kit.fontawesome.com/3416477e81.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="navBar">
+        <div class="main">
+            <div class="logo">
+                <img src="https://www.sportstime247.com/wp-content/uploads/2022/02/IPL-2022-Group-Format.jpg" alt="logo" class="logoImg"/>
+            </div>
+            <div class="menuItem">
+                <a href="./index.html" class="home">Home</a>
+                <a href="./index.html" class="team">Team</a>
+            </div>
+            <div id="searchBox">
+                <a href="" target="_blank" hidden></a>
+                <input type="text" name="search" placeholder="Search for teams..." value="" id="searchText" />
+                <div class="autoBox">
+
+                </div>
+                <div class="icon"><i class="fas fa-search search-icon" aria-hidden="true"></i></div>
+            </div>
+            <div class="menuBtn">
+                <button id="addTeam" class="addBtn" onclick="addTeamClick()" style="display: none ;">Add Team</button>
+                <button id="addTeam" class="addBtn" onclick="addTeamClick()" style="display: none ;">Add Team</button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div id="addTeam">
+        <div class="heading1">
+
+            <h1>Add a New Team</h1>
+        </div>
+        
+        <form id="addteamform">
+           <div>
+              <p>Team Name</p>
+              <input id="inp1" type="text" name="teamname" placeholder="Enter Team Name " required>
+            </div>
+
+            <div>
+                <p>Team Logo Url</p>
+               <input id="inp3" type="text" name="logoUrl" placeholder="Enter Logo Url" required>
+            </div>
+
+            <div>
+               <p>Won Count</p>
+               <input id="inp4" type="number" name="wonCount" maxlength="1" placeholder="Enter Championship Won" required><br>
+            </div>
+
+            <div>
+               <button type="submit">Add Team</button>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="./addTeam.js" type="text/javascript"></script>
+</body>
+</html>
